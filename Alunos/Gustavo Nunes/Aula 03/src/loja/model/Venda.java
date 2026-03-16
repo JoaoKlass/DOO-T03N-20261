@@ -1,4 +1,4 @@
-package loja;
+package loja.model;
 
 public class Venda {
     private static int contId = 1;
@@ -14,8 +14,4 @@ public class Venda {
         this.desconto = desconto;
     }
 
-    // Retorna o valor do desconto
-    public static double geraDesconto(double valorVenda) {
-        return valorVenda * 0.05;
-    }
 }

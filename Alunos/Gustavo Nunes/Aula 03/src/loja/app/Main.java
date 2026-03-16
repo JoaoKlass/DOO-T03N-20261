@@ -1,12 +1,14 @@
-package loja;
+package loja.app;
+
+import loja.model.Venda;
 
 import java.util.Scanner;
 import java.util.ArrayList;
 
 public class Main {
 
-    static Scanner scanner = new Scanner(System.in);
-    static ArrayList<Venda> vendas = new ArrayList<>();
+    private static Scanner scanner = new Scanner(System.in);
+    private static ArrayList<Venda> vendas = new ArrayList<>();
 
     public static void main(String[] args) {
         mostraMenu();
@@ -59,17 +61,4 @@ public class Main {
 
     }
 
-    // Calculo do troco
-    private static void calculaTroco() {
-
-        System.out.println("\nValor pago: ");
-        double valPag = scanner.nextDouble();
-        System.out.println("\nValor devido: ");
-        double valDev = scanner.nextDouble();
-
-        double troco = valPag - valDev;
-
-        System.out.printf("\nTroco Devido = R$%.2f",troco);
-
-    }
 }
